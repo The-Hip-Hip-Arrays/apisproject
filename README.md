@@ -7,6 +7,11 @@ We are building a fashion recommendation service that connects to your local wea
 ## How
 We are going to access the API **Open Weather** and **Zalando**. We need an API Key for **Open Weather** but **Zalando** is free. Just to make our lives that bit easier.
 
+1. Get Item IDs, filtered by season and clothing type.
+2. Pick a random ID
+3. Get whole article object
+4. Extract image link, etc.
+
 ## Why
 Because freedom of speech is dead.
 
