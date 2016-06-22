@@ -18,6 +18,16 @@ xhr.addEventListener("readystatechange", function () {
   }
 });
 
+xhr.open("GET", "https://api.zalando.com/articles" + womensHats);
+xhr.setRequestHeader("accept-language", "en");
+xhr.send(data);
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4 && this.status === 200) {
+    var result = JSON.parse(this.response);
+  }
+});
+
 xhr.open("GET", "https://api.zalando.com/articles" + womensTops);
 xhr.setRequestHeader("accept-language", "en");
 xhr.send(data);
@@ -42,12 +52,6 @@ xhr.open("GET", "https://api.zalando.com/articles" + womensShoes);
 xhr.setRequestHeader("accept-language", "en");
 xhr.send(data);
 
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === 4 && this.status === 200) {
-    var result = JSON.parse(this.response);
-  }
-});
-
-xhr.open("GET", "https://api.zalando.com/articles" + womensHats);
-xhr.setRequestHeader("accept-language", "en");
-xhr.send(data);
+// function getRandomArticle(){
+//
+// }
