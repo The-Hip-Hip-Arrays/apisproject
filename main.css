@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#fairyhead {
+  cursor: pointer;
+}
+
 .image {
   height: 150px;
   width: 300px;
@@ -25,15 +29,6 @@
   width: 350px;
   position: fixed;
   top: 50px;
-}
-
-.buttons {
-  position: fixed;
-  top: 280px;
-}
-
-.buttons button {
-  width: 100%;
 }
 
 .talking-head p {

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>API</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.18.0.css">
+    <!-- Pure CSS is a minimalist CSS file we have included to make things look nicer -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -13,10 +16,6 @@
         <div class="talking-head-text">
           <p id ="fairy-text">You shall go to the ball but what to wear? Let me, your Fairy Godmother decide.</p>
         </div>
-    </div>
-    <div class = "buttons">
-      <button id= "fairybutton" type="button">Fairy</button>
-      <button id= "fashionbutton" type="button">Fashion</button>
     </div>
 
     <div class="image-stack">
@@ -37,7 +36,11 @@
         <figcaption>Shoes</figcaption>
       </figure>
     </div>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
 
+    <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <script src="js/test.js"></script>
     <script src="js/fairy-content.js"></script>
     <script src="js/app.js"></script>
   </body>
