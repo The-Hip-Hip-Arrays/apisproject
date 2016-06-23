@@ -81,7 +81,14 @@ document.getElementById('fashionbutton').addEventListener("click", function(){
   randomShoesGenerator();
 });
 
+
 document.getElementById('fairybutton').addEventListener("click", function(){
   var randomComment = comments[Math.floor(Math.random() * comments.length)];
   document.getElementById('fairy-text').textContent = randomComment;
+  var randomImage= images[Math.floor(Math.random() * images.length)];
+  console.log(randomImage);
+  document.getElementById('fairyhead').src = randomImage;
 });
+
+//now try, wasn't saved
+// let's see if this works
