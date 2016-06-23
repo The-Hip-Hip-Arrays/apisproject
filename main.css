@@ -70,6 +70,7 @@ body {
   margin: auto;
   border-radius: 50%;
   border: 2px solid black;
+  transform: rotate(-90deg);
   overflow: hidden;
 }
 
