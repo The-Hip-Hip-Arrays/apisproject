@@ -16,6 +16,7 @@ xhr.addEventListener("readystatechange", function () {
     var result = JSON.parse(this.response);
     womensHatsArr.push(result);
     var randomNumber = womensHatsArr[0].content[Math.floor(Math.random() * 201)];
+    document.getElementById('hats-img').src = randomNumber.media.images[0].mediumUrl;
   }
 });
 
@@ -31,6 +32,7 @@ xhr.addEventListener("readystatechange", function () {
     var result = JSON.parse(this.response);
     womensTopsArr.push(result);
     var randomNumber = womensTopsArr[0].content[Math.floor(Math.random() * 201)];
+    document.getElementById('tops-img').src = randomNumber.media.images[0].mediumUrl;
   }
 });
 
@@ -47,6 +49,11 @@ xhr.addEventListener("readystatechange", function () {
     var result = JSON.parse(this.response);
     womensTrousersArr.push(result);
     var randomNumber = womensTrousersArr[0].content[Math.floor(Math.random() * 201)];
+
+document.getElementById('trousers-img').src = randomNumber.media.images[0].mediumUrl;
+
+
+
   }
 });
 
@@ -63,8 +70,14 @@ xhr.addEventListener("readystatechange", function () {
     var result = JSON.parse(this.response);
     womensShoesArr.push(result);
     var randomNumber = womensShoesArr[0].content[Math.floor(Math.random() * 201)];
-  }
+    document.getElementById('shoes-img').src = randomNumber.media.images[0].mediumUrl;
+    console.log(randomNumber.name);
+
+
+}
 });
+
+
 
 xhr.open("GET", "https://api.zalando.com/articles" + womensShoes);
 xhr.setRequestHeader("accept-language", "en");
