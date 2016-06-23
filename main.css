@@ -50,6 +50,8 @@ body {
 
 .talking-head {
   height: 150px;
+  top: 100px;
+  width: 400px;
 }
 
 .buttons {
@@ -75,11 +77,11 @@ body {
 }
 
 .talking-head-text{
-  width: 65%;
+  width: 50%;
   border: 2px solid black;
   padding: 0.5em;
   box-shadow: 8px 8px #ccc;
-  float: right;
+  margin: 50px
 }
 
 .talking-head-text::before{
@@ -95,22 +97,26 @@ body {
   .image figcaption{
     display: block;
   }
-}
 
-
-
-@media screen and (min-width: 920px) {
   .talking-head {
     position: fixed;
-    top: 50px;
-    width: 350px;
+    top: 100px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .talking-head {
+    position: fixed;
+    top: 100px;
+    width: 400px;
   }
 
   .talking-head-text {
-    width: 300px;
+    width: 220px;
     position: absolute;
-    right: -120px;
-    top: 50px;
+    right: -150px;
+    top: 0px;
     float: none;
   }
 }
