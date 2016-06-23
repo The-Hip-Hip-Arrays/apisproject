@@ -27,10 +27,15 @@
   top: 50px;
 }
 
+.talking-head p {
+  font-size: 25px;
+}
+
 .talking-head img{
   height: 120%;
   margin: auto;
   border-radius: 50%;
+  border: 2px solid black;
   overflow: hidden;
 }
 
