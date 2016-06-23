@@ -27,6 +27,15 @@
   top: 50px;
 }
 
+.buttons {
+  position: fixed;
+  top: 280px;
+}
+
+.buttons button {
+  width: 100%;
+}
+
 .talking-head p {
   font-size: 25px;
 }
