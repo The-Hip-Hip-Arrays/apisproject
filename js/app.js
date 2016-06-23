@@ -1,13 +1,13 @@
 var data = null;
+var womensHatsArr = [];
 var womensTopsArr = [];
 var womensTrousersArr = [];
 var womensShoesArr = [];
-var womensHatsArr = [];
 
+var womensHats = "?category=womens-hats-caps&pageSize=200"
 var womensTops = "?category=womens-clothing-tops&pageSize=200"
 var womensTrousers = "?category=womens-clothing-trousers&category=womens-clothing-jeans&category=womens-clothing-leggings&category=womens-clothing-skirts&pageSize=200"
 var womensShoes = "?category=womens-shoes&pageSize=200"
-var womensHats = "?category=womens-hats-caps&pageSize=200"
 
 function randomHatGenerator() {
   var xhr = new XMLHttpRequest();
@@ -84,3 +84,5 @@ document.getElementById('fairyhead').addEventListener("click", function(){
   var randomImage= images[Math.floor(Math.random() * images.length)];
   document.getElementById('fairyhead').src = randomImage;
 });
+
+console.log(typeof womensTopsArr);
