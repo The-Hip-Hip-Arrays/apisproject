@@ -84,3 +84,5 @@ document.getElementById('fairyhead').addEventListener("click", function(){
   var randomImage= images[Math.floor(Math.random() * images.length)];
   document.getElementById('fairyhead').src = randomImage;
 });
+
+console.log(typeof womensTopsArr);
