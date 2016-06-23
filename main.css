@@ -19,3 +19,17 @@
   float: right;
   line-height: 150px;
 }
+
+.talking-head {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.talking-head img{
+  height: 120%;
+  margin: auto;
+}
