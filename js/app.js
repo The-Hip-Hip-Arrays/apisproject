@@ -16,6 +16,7 @@ function randomHatGenerator() {
       var result = JSON.parse(this.response);
       womensHatsArr.push(result);
       var randomNumber = womensHatsArr[0].content[Math.floor(Math.random() * womensHatsArr[0].content.length + 1)];
+      var randomImageGenerator= randomNumber.media.images[0].mediumUrl;
       document.getElementById('hats-img').src = randomNumber.media.images[0].mediumUrl;
     }
 });
@@ -84,5 +85,3 @@ document.getElementById('fairyhead').addEventListener("click", function(){
   var randomImage= images[Math.floor(Math.random() * images.length)];
   document.getElementById('fairyhead').src = randomImage;
 });
-
-console.log(typeof womensTopsArr);
