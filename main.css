@@ -29,6 +29,10 @@ body {
   margin-top: 1em;
 }
 
+#fairyhead {
+  cursor: pointer;
+}
+
 .image {
   height: 150px;
   width: 300px;
@@ -52,15 +56,6 @@ body {
   height: 150px;
   top: 100px;
   width: 400px;
-}
-
-.buttons {
-  position: fixed;
-  top: 280px;
-}
-
-.buttons button {
-  width: 100%;
 }
 
 .talking-head p {
