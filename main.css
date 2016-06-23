@@ -42,6 +42,7 @@ body {
 }
 
 .image figcaption{
+  display: none;
   text-align: center;
   float: right;
   line-height: 150px;
@@ -88,6 +89,14 @@ body {
   left: -20px;
   top: 40px;
 }
+
+@media screen and (min-width: 600px) {
+  .image figcaption{
+    display: block;
+  }
+}
+
+
 
 @media screen and (min-width: 920px) {
   .talking-head {
