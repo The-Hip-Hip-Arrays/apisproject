@@ -26,7 +26,7 @@ For the fairy image, the following is required:
 
 For the clothing images:
 
-We selected requested 200 items on 4 separate requests from Zalando. We then passed these into 4 arrays and pulled a random item from the arrays. From these we selected an image for each item and passed these into the DOM elements that matched whether the item was a hat, top, bottoms or shoes.
+We selected requested 50 items on 4 separate requests from **Zalando**. We then passed these into 4 arrays and pulled a random item from the arrays. From these we selected an image for each item and passed these into the DOM elements that matched whether the item was a hat, top, bottoms or shoes.
 
 These images are set into the DOM elements and attached to an event listener function which is on a click of the initial fairy image. These images change each time the image is clicked, as do the fairy images that were also set into an array and randomised through the event listener function.
 
