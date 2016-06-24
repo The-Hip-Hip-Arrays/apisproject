@@ -19,6 +19,8 @@ body {
 
 .wrapper{
   padding: 0.5em;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .image-stack {
