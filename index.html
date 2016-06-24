@@ -11,36 +11,41 @@
   <body>
     <h1 id="title">Clothing recommender</h1>
 
-    <div class="talking-head">
-      <img id="fairyhead" src="assets/DSC_0071.JPG" alt="" />
-        <div class="talking-head-text">
-          <p id ="fairy-text">You shall go to the ball but what to wear? Let me, your Fairy Godmother decide.</p>
-        </div>
+    <div class="wrapper">
+
+      <div class="talking-head">
+        <img id="fairyhead" src="assets/DSC_0071.JPG" alt="" />
+          <div class="talking-head-text">
+            <p id ="fairy-text">You shall go to the ball but what to wear? Let me, your Fairy Godmother decide.</p>
+          </div>
+      </div>
+
+      <div class="image-stack">
+        <figure class="image">
+          <img id="hats-img" src="" alt="" />
+          <figcaption>Hat</figcaption>
+        </figure>
+        <figure class="image">
+          <img id="tops-img" src="" alt=""/>
+          <figcaption>Top</figcaption>
+        </figure>
+        <figure class="image">
+          <img id="trousers-img" src="" alt="" />
+          <figcaption>Bottom</figcaption>
+        </figure>
+        <figure class="image">
+          <img id="shoes-img" src="" alt="" />
+          <figcaption>Shoes</figcaption>
+        </figure>
+      </div>
+
     </div>
 
-    <div class="image-stack">
-      <figure class="image">
-        <img id="hats-img" src="" alt="hat" />
-        <figcaption>Hat</figcaption>
-      </figure>
-      <figure class="image">
-        <img id="tops-img" src="" alt="top"/>
-        <figcaption>Top</figcaption>
-      </figure>
-      <figure class="image">
-        <img id="trousers-img" src="" alt="bottoms" />
-        <figcaption>Bottom</figcaption>
-      </figure>
-      <figure class="image">
-        <img id="shoes-img" src="" alt="shoes" />
-        <figcaption>Shoes</figcaption>
-      </figure>
-    </div>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
 
-    <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
-    <script src="js/test.js"></script>
+    <!-- <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <script src="js/test.js"></script> -->
     <script src="js/fairy-content.js"></script>
     <script src="js/app.js"></script>
   </body>
