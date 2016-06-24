@@ -87,7 +87,7 @@ document.getElementById('fairyhead').addEventListener("click", function(){
   randomImages();
   var randomComment = comments[Math.floor(Math.random() * comments.length)];
   document.getElementById('fairy-text').textContent = randomComment;
-  // var randomImage= images[Math.floor(Math.random() * images.length)];
-  // document.getElementById('fairyhead').src = randomImage;
-  document.getElementById('fairyhead').src ="assets/DSC_0072.JPG"; //this is the test code, to test the image changes on click
+  var randomImage= images[Math.floor(Math.random() * images.length)];
+  document.getElementById('fairyhead').src = randomImage;
+  // document.getElementById('fairyhead').src ="assets/DSC_0072.JPG"; //this is the test code, to test the image changes on click
 });
