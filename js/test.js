@@ -23,5 +23,5 @@ test('button changes image', function(assert) {
     var actual = document.getElementById('fairyhead').src;
     assert.equal(actual, expected, 'button changes image');
     done();
-},2000);
+},3000);
 });
