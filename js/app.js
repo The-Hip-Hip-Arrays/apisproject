@@ -81,12 +81,13 @@ function randomImages() {
   document.getElementById('trousers-img').src = randomTrousersNumber.media.images[0].mediumUrl;
   var randomShoesNumber = womensShoesArr[0].content[Math.floor(Math.random() * womensShoesArr[0].content.length + 1)];
   document.getElementById('shoes-img').src = randomShoesNumber.media.images[0].mediumUrl;
-}
+};
 
 document.getElementById('fairyhead').addEventListener("click", function(){
   randomImages();
   var randomComment = comments[Math.floor(Math.random() * comments.length)];
   document.getElementById('fairy-text').textContent = randomComment;
-  var randomImage= images[Math.floor(Math.random() * images.length)];
-  document.getElementById('fairyhead').src = randomImage;
+  // var randomImage= images[Math.floor(Math.random() * images.length)];
+  // document.getElementById('fairyhead').src = randomImage;
+  document.getElementById('fairyhead').src ="assets/DSC_0072.JPG"; //this is the test code, to test the image changes on click
 });
