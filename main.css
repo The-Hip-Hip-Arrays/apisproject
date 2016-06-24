@@ -64,12 +64,14 @@ body {
 }
 
 .talking-head img{
-  height: 120%;
+  height: 80%;
   border-radius: 50%;
   border: 2px solid black;
   transform: rotate(-90deg);
   overflow: hidden;
   display: block;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .talking-head-text{
@@ -79,6 +81,7 @@ body {
   box-shadow: 8px 8px #ccc;
   margin: auto;
   display: block;
+  margin-top: 50px;
 }
 
 .talking-head-text::before{
@@ -106,12 +109,14 @@ body {
     width: 400px;
   }
 
-  .talking-head-text {
-    margin: auto;
+  .talking-head img{
+    height: 120%;
+    margin-left: 0px;
   }
 
   .talking-head-text {
-    margin: 50px;
+    margin-top: 100px;
+    margin-left: 55px;
   }
 
   .talking-head p {
