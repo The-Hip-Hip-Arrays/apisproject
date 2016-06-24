@@ -1,6 +1,10 @@
 # API's Project
 The Hip Hip Array's are back and are creating a spectacular project filled with amusing fashion choices, and a comforting, warming, delightfully sassy fashion expert who guides your daily fashion choices.
 
+## To Run
+To run this you need to access: https://github.com/The-Hip-Hip-Arrays/apisproject;
+Hit git clone and clone this into your terminal. As this is a free API based project you do not need to get a key to run this.
+
 ## What
 We are building a fashion recommendation service. We are using the brand **Zalando** as our primary source for the fashion choices, which will be divided in to four categories - hats, tops, trousers and shoes.
 
