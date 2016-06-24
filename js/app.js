@@ -72,31 +72,19 @@ function randomShoesGenerator() {
   xhr.send(data);
 }
 
-function randomHats() {
+function randomImages() {
   var randomHatsNumber = womensHatsArr[0].content[Math.floor(Math.random() * womensHatsArr[0].content.length + 1)];
   document.getElementById('hats-img').src = randomHatsNumber.media.images[0].mediumUrl;
-}
-
-function randomTops(){
   var randomTopsNumber = womensTopsArr[0].content[Math.floor(Math.random() * womensTopsArr[0].content.length + 1)];
   document.getElementById('tops-img').src = randomTopsNumber.media.images[0].mediumUrl;
-}
-
-function randomTrousers(){
   var randomTrousersNumber = womensTrousersArr[0].content[Math.floor(Math.random() * womensTrousersArr[0].content.length + 1)];
   document.getElementById('trousers-img').src = randomTrousersNumber.media.images[0].mediumUrl;
-}
-
-function randomShoes(){
   var randomShoesNumber = womensShoesArr[0].content[Math.floor(Math.random() * womensShoesArr[0].content.length + 1)];
   document.getElementById('shoes-img').src = randomShoesNumber.media.images[0].mediumUrl;
 }
 
 document.getElementById('fairyhead').addEventListener("click", function(){
-  randomHats();
-  randomTops();
-  randomTrousers();
-  randomShoes();
+  randomImages();
   var randomComment = comments[Math.floor(Math.random() * comments.length)];
   document.getElementById('fairy-text').textContent = randomComment;
   var randomImage= images[Math.floor(Math.random() * images.length)];
